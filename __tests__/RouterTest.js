@@ -8,9 +8,9 @@ test('Router', () => {
         .add('/c/:companyCode', 'company target')
         .add('/c/:companyCode/employee/:employeeCode', 'company employee');
 
-    const res = router.dispatch('/c/gaptree/employee/some-one');
+    const match = router.match('/c/gaptree/employee/some-one');
 
-    expect(res.action).toBe('company employee');
-    expect(res.params.companyCode).toBe('gaptree');
-    expect(res.params.employeeCode).toBe('some-one');
+    expect(match.action).toBe('company employee');
+    expect(match.params.companyCode).toBe('gaptree');
+    expect(match.params.employeeCode).toBe('some-one');
 });
