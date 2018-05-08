@@ -1,6 +1,6 @@
 {
   "name": "gap-front-routing",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "index.js",
   "repository": "https://github.com/gaptree/gap-front-routing",
   "author": "zhanjh <zhanjh@126.com>",
@@ -18,7 +18,5 @@
     "jest": "^22.4.3",
     "regenerator-runtime": "^0.11.1"
   },
-  "dependencies": {
-    "path-to-regexp": "^2.2.1"
-  }
+  "dependencies": {}
 }
